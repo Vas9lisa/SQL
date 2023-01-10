@@ -68,7 +68,7 @@ rename column loc to city;
 
 
 
--- Написать sql по library_simple
+-- Написать sql по library_simple (БД взята у amyasnov тут https://github.com/amyasnov/stepic-db-intro/tree/2650f9a7f9c72e1219ea93cb4c4e410cca046e54 )
 --  1. Каково имя автора с фамилией Свенсон?
 --  2. Сколько страниц в книге "Люди без страха"?
 --  3. Показать все категории книг, начинающиеся с буквы "W"
