@@ -58,5 +58,3 @@ order by amount desc
 limit 1; 
 
 select customerNumber, amount from classicmodels.payments order by amount desc limit 1;
-
--- Сохраните свою работу в Homework2_Answers.sql
