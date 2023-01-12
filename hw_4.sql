@@ -9,14 +9,20 @@ select count(*) from classicmodels.products;
 -- 4.какой товар был продан больше всего?
 -- 5.сколько денег было заработано между BuyPrice и MSRP?
 -- 6.какой продавец продает Shelby Cobra 1966 года выпуска?
-select productVendor, productName from classicmodels.products
+select productVendor, productName 
+from classicmodels.products
 where productName like "%1966%Shelby%Cobra%";
 
 -- 7.какой поставщик продает больше товаров?
 -- 8.какой продукт является самым дорогим и наименее затратным?
-select * from classicmodels.products;
-select productName, msrp from classicmodels.products
+select msrp, productName
+from classicmodels.products
 order by msrp desc
+limit 1;
+
+select msrp, productName
+from classicmodels.products
+order by msrp
 limit 1;
 
 -- 9.какой продукт имеет наибольшее количество на складе?
@@ -36,6 +42,7 @@ limit 1;
 select contactFirstName, contactLastName, creditLimit from classicmodels.customers
 order by creditLimit asc
 limit 1;
+
 
 -- 12.ранжируйте клиентов по кредитному лимиту
 select * from classicmodels.customers
